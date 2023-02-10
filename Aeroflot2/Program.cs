@@ -51,5 +51,19 @@
         if (response != "")
             Console.WriteLine(response);
         else Console.WriteLine("Рейсы на данный день недели, время вылета которых больше заданного отсутствуют.");
+
+
+        int i = 1;
+        Aeroflot.MyClass obj = new(0);
+
+        for (; i < 120000; i++)
+        {
+            obj.objectGenerator(i);
+        }
+
+        Console.ForegroundColor = ConsoleColor.DarkGray;
+        Console.WriteLine("\nКонец");
+
+        Console.ReadLine();
     }
 }
