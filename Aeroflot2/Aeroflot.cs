@@ -1,7 +1,7 @@
 ﻿class Aeroflot
 {
     string point, day, type, number;
-    public int time;
+    public int time { get; set; }
     public string getDay
     {
         get
